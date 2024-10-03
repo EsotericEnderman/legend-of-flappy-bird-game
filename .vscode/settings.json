@@ -59,6 +59,7 @@
     "dotnet.defaultSolution": "legend-of-flappy-bird.sln",
     "cSpell.words": [
         "Behaviour",
+        "Enderman",
         "rigidbody",
         "Rigidbody"
     ]
