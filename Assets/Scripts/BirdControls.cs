@@ -1,31 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BirdControls : MonoBehaviour
 {
-    private KeyCode upbutton;
 
-    public float vel;
+    private readonly KeyCode upButton = KeyCode.Space;
 
-    private Rigidbody2D rb;
+    private new Rigidbody2D rigidbody;
+
+    private readonly float jumpForce = 5F;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rigidbody = GetComponent<Rigidbody2D>();
     }
 
-    
-    void Update()
+    private void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown((int) MouseButton.Left) || Input.GetKeyDown(upButton))
         {
-            rb.velocity = Vector2.up * vel;
+            rigidbody.velocity = Vector2.up * jumpForce;
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        GameManager.instance.GameOver();
+        GameManager.Instance.GameOver();
     }
 }

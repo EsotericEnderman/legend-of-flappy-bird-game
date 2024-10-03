@@ -1,37 +1,61 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
-    public int score;
-    public TMP_Text scoreText;
 
-    public GameObject GameOverScreen;
+    private static GameManager instance;
+    public static GameManager Instance
+    {
+        get
+        {
+            return instance;
+        }
+    }
+
+    private readonly TMP_Text scoreText;
+    private readonly GameObject gameOverScreen;
+
+    private int score = 0;
+    public int Score
+    {
+        get
+        {
+            return score;
+        }
+
+        set
+        {
+            if (value != score + 1) {
+                Debug.LogWarning("Score can only be incremented by 1");
+                return;
+            }
+
+            score = value;
+        }
+    }
     
     void Start()
     {
         instance = this;
+
         Time.timeScale = 1;
-        GameOverScreen.SetActive(false);
+        gameOverScreen.SetActive(false);
     }
 
     void Update()
     {
         scoreText.text = score.ToString();
-
     }
 
     public void GameOver()
     {
-        GameOverScreen.SetActive(true);
-        Time.timeScale = 0f;
+        gameOverScreen.SetActive(true);
+        Time.timeScale = 0F;
     }
 
-    public void replay()
+    public void Replay()
     {
         SceneManager.LoadScene(0);
     }

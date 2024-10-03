@@ -56,5 +56,10 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "legend-of-flappy-bird.sln"
+    "dotnet.defaultSolution": "legend-of-flappy-bird.sln",
+    "cSpell.words": [
+        "Behaviour",
+        "rigidbody",
+        "Rigidbody"
+    ]
 }

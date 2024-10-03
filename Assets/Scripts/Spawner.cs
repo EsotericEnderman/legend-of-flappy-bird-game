@@ -1,18 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public float maxTime;
-    private float timer;
 
-    public GameObject pipes;
-    public float pipeHeights;
+    private readonly GameObject pipes;
+
+    private readonly float pipeHeights = 5F;
+    private readonly float maxTimeSeconds = 2F;
+
+    private float timer;
 
     private void Update()
     {
-        if(timer > maxTime)
+        if (timer > maxTimeSeconds)
         {
             GameObject newPipe = Instantiate(pipes);
             newPipe.transform.position = transform.position = new Vector3(0, Random.Range(-pipeHeights, pipeHeights), 0);
