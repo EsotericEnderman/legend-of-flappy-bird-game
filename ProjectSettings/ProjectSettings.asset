@@ -630,14 +630,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: legend-of-flappy-bird
+  metroPackageName: dev.enderman.decompiled.games.unity.flappybird
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: legend-of-flappy-bird
+  metroApplicationDescription: A mostly unsuccessful attempt at getting the source code of Legend of Flappy Bird into a workable state.
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
