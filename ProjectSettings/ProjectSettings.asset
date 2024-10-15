@@ -639,7 +639,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: A mostly unsuccessful attempt at getting the source code of Legend of Flappy Bird into a workable state.
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Legend of Flappy Bird
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
