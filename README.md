@@ -1,6 +1,6 @@
 # Legend of Flappy Bird Game
 
-[![Project Status: Abandoned](./assets/images/badges/status.svg)](./)
+[![Project Status: Abandoned](./Assets/Badges/Status.svg)](./)
 
 > A mostly unsuccessful attempt at getting the source code of [Legend of Flappy Bird](https://ctyiextrasonic.itch.io/legend-of-flappy-bird) into a workable state.
 
